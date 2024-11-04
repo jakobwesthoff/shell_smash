@@ -1,0 +1,10 @@
+[package]
+name = "shell_smash"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "*"
+pixel_loop = { version = "*", path = "../pixel_loop", default-features = false, features = [
+  "crossterm",
+] }
